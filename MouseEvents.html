@@ -25,6 +25,20 @@
     box.addEventListener("mouseout", function() {
       box.style.backgroundColor = "blue";
     });
+
+    box.addEventListener("mousedown", function() {
+      box.style.backgroundColor = "green";
+    });
+
+    box.addEventListener("mouseup", function() {
+      box.style.backgroundColor = "yellow";
+    });
+
+    box.addEventListener("mousemove", function(event) {
+      var x = event.clientX;
+      var y = event.clientY;
+      console.log("Mouse position: x=" + x + ", y=" + y);
+    });
   </script>
 </body>
 </html>
